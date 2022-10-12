@@ -1,0 +1,102 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>AUTC</title>
+	<script src="remLib.js"></script>
+	<script src="fixibug.js"></script>
+	<script src="scripts.js"></script>
+	<script src="smoothScroll/smoothscroll.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="icon" type="image/png" href="icon.png" />
+</head>
+<body>
+	<div id="home-container" class="fs-container">
+		<div style="position: relative; top: 30%; background-color: #51c71a; border-color: white; border-width: 10px 0px 10px 0px; border-style: solid;">
+		<img style="display: block; margin: 0 auto;" src="AUTC_Logo.png" width="100" height="100" />
+		<h1 id="title-header">Aberystwyth University Tennis Club</h1>
+		<p id="title-subtext">Welcome to AUTC! We're looking for new members, 
+		whether you're a tennis pro or have never picked up a racket, or simply feel like trying a new sport.</p>
+		<button class="transparent" style="display: block; margin: 0 auto; margin-bottom: 5px;" onclick="smoothScroll(getE('about-container'));">More Info</button>
+		</div>
+	</div>
+	
+	<div id="about-container" class="fs-container">
+		<h1 class="fs-container-title">About Us</h1>
+		<p id="about-introduction">Hello and welcome to Aberystwyth University Tennis Club 2021/22.
+		Our club welcomes all abilities from no experience and social players all 
+		the way up to representing the University in BUCS and beyond.</p>
+		
+		<div class="about-box">
+			<h1>What's on</h1>
+			<p>Sessions will be run by different committee members.
+			 Sessions have a variety of activities throughout them, such as games, drills and matches.
+			 These sessions are available to all members regardless of experience and is a great way to improve skills and practise your tennis.
+			 Equipment is provided by the club free of charge to all members.</p>
+		</div>
+		
+		<div class="about-box">
+			<h1>Touch Tennis</h1>
+			<p>This new development for the tennis club is included in your tennis membership, 
+			however if you wish to only play touch tennis then there is a separate membership available. With smaller courts, nets, rackets and lower bouncing balls as well as an indoor space 
+			Touch Tennis is the perfect way to play regardless of experience and fortunately is not affected by weather.
+			Touch Tennis is not just for beginners, everyone is welcome, and we have a great set of games for sessions.
+			All equipment is provided by the club free of charge. The timing of these sessions are TBC.</p>
+			<p></p>
+		</div>
+		<div class="about-box">
+			<h1>Socials</h1>
+			<p>Socials are run by our social secretaries and these are a great way for all our members to socialise outside the confines of the tennis courts and meet our many non-tennis playing members.
+			There are various events that occur at socials and these will be announced at a later date. Watch this space.</p>
+		</div>
+	</div>
+	
+	<div id="events-container" class="fs-container">
+		<h1 class="fs-container-title" style="color: #000000;">Events</h1>
+		<p>Please check back here to see our running events.</p>
+		<table id="events-table">
+			<thead>
+				<tr><th scope="col">Date</th><th scope="col">Name</th><th scope="col">Description</th><th scope="col">Time</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>22/10/21</td><td>Touch Tennis</td><td>At Sports Cage</td><td>19:30</td></tr>
+				<tr><td>29/10/21</td><td>Touch Tennis</td><td>At Sports Cage</td><td>19:30</td></tr>
+				<tr><td>5/11/21</td><td>Touch Tennis</td><td>At Sports Cage</td><td>19:30</td></tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div id="contact-container" class="fs-container">
+		<h1 class="fs-container-title">Contact Us & Join</h1>
+		<div id="inner-contact-container">
+			<p>Remember to follow us on Facebook and Instagram! If you have any questions, please feel free to contact us and we'll get back to you as soon as possible.</p>
+			<table>
+				<tr><th colspan="2">Current Committee</th></tr>
+				<tr><td>President:</td><td>Jack Faiers</td></tr>
+				<tr><td>Treasurer:</td><td>Greg Card</td></tr>
+				<tr><td>Men's Captain:</td><td>Alexis Hayman</td></tr>
+				<tr><td>Women's Captain:</td><td>Sarah Ch'ng</td></tr>
+			</table>
+			<div style="display: block; margin: 0 auto;">
+				<a href="https://www.facebook.com/aberunitennis"><img id="facebook-icon" src="spacer.gif" class="social-media-icon" /></a>
+				<img id="instagram-icon" src="spacer.gif" class="social-media-icon" onclick="goTo('https://www.instagram.com/aberunitennisclub/')" />
+				<img id="email-icon" src="spacer.gif" class="social-media-icon" onclick="goTo('mailto:abertennis@gmail.com')" />
+			</div>
+			</div>
+		<p></p>
+	</div>
+	
+	<noscript>
+		<div id="no-js-warning">
+			<img src="warning-icon.png" width="16" height="16" style="image-rendering: crisp-edges; display: block; margin: 0 auto;" ></img>
+			<p>Parts of this website require JavaScript to function</p>
+		</div>
+	</noscript>
+	
+	<footer>
+	Website by Greg Card (glc3@aber.ac.uk) - Last updated: 20th October 2021
+	<a href="javascript:smoothScroll(getE('contact-container'))">contact</a>
+	<a href="javascript:smoothScroll(getE('about-container'))">about</a>	
+	<a href="javascript:smoothScroll(getE('home-container'))">top</a>
+	</footer>
+</body>
+</html>
